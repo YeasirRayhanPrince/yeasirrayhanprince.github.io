@@ -1,0 +1,140 @@
+package Online2;
+
+
+class License {
+    String licenseString;
+
+    public License(String licenseString) {
+        this.licenseString = licenseString;
+    }
+}
+
+interface ISpeaking{
+    void speak();
+    default void defaultMethodOne(){
+        System.out.println("Inside interface ISpeaking");
+    }
+}
+
+interface ILicensable{
+    License getLicense();
+    default void defaultMethodTwo(){
+        System.out.println("Inside interface ILicensable");
+    }
+}
+
+
+class Bird implements ISpeaking{
+    String name;
+    public Bird(String birdName){
+        this.name = birdName;
+    }
+    public void speak(){
+        System.out.println("tweet");
+    }
+    public void defaultMethodOne(){
+        System.out.println("Default Method of Interface ISpeaking Inside Bird");
+    }
+}
+
+abstract class Pet implements ISpeaking{
+    private String name;
+
+    public Pet(String pName){
+        name = pName;
+    }
+
+    public String getName(){
+        return name;
+    }
+    public abstract void speak();
+
+    public static void run(){
+        System.out.println("A pet is running");
+    }
+}
+
+class Dog extends Pet implements ILicensable{
+    private License license;
+
+    public Dog(String name, License license){
+        super(name);
+        this.license = license;
+    }
+
+    public void speak(){
+        System.out.println("woof");
+    }
+
+    public License getLicense(){
+        return license;
+    }
+
+    public void defaultMethodTwo(){
+        System.out.println("Default Method of Interface ILicensable Inside ILicensable");
+    }
+}
+
+class BullDog extends Dog{
+
+    public BullDog(String name, License license){
+        super(name, license);
+    }
+
+    public void speak(){
+        System.out.println("raooou");
+    }
+
+    public Bird retrieve(){
+        return new Bird("Tweety");
+    }
+
+    public static void run(){
+        System.out.println("A bulldog is running");
+    }
+}
+
+class Cat extends Pet{
+    public Cat(String name){
+        super(name);
+    }
+
+    public void speak(){
+        System.out.println("miao");
+    }
+}
+
+public class Animals{
+
+    public static void main(String[] args){
+
+        ISpeaking s = new Bird("Woody Woodpecker");
+        s.speak();
+        s.defaultMethodOne();
+        System.out.println();
+
+        s = new Cat("Tom");
+        s.speak();
+        s.defaultMethodOne();
+        System.out.println();
+
+        Dog d = new Dog("Scooby-Doo", new License("Scooby1111"));
+        d.speak();
+        d.defaultMethodOne();
+        d.defaultMethodTwo();
+        d.run();
+        System.out.println();
+
+
+        Pet p = new BullDog("Tasmanian Devil", new License("Tasmanian123"));
+        p.speak();
+        p.defaultMethodOne();
+        p.run();
+        System.out.println();
+
+        Bird b = new BullDog("Brian Griffin", new License("Brian234")).retrieve();
+        b.speak();
+
+    }
+}
+
