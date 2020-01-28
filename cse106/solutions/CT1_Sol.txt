@@ -1,0 +1,73 @@
+Set A
+------------------------------------------------------------------------------------------------------------------
+Problem1: (¬ r → p) ↔ (¬q ⊕ r)
+-----------------------------
+(¬ r → p) ↔ (¬q ⊕ r)
+≡ a ↔ b
+≡ c
+
+p	q	r  ¬ r  ¬q  a   b   c
+0	0	0	1	1	0	1	0
+0	0	1	0	1	1	0	0
+0	1	0	1	0	0	0	1
+0	1	1	0	0	1	1	1
+1	0	0	1	1	1	1	1
+1	0	1	0	1	1	0	0
+1	1	0	1	0	1	0	0
+1	1	1	0	0	1	1	1
+
+
+
+Problem2(a):
+-----------------------------
+Only the multiplication of two even numbers can yield an even number.
+As, both x and y belongs to Z, when x and y is an odd number, e.g, 1
+the propositional function will become false.
+
+As both the quantifiers are universal it takes one false case for the propositional function
+to be false.
+Hence, the answer is false
+
+Problem2(b):
+-----------------------------
+Only the multiplication of two even numbers can yield an even number.
+As, both x and y belongs to an even number, the propositional function will be always true.
+
+Hence, the answer is true
+-----------------------------------------------------------------------------------------------------------------
+-----------------------------------------------------------------------------------------------------------------
+
+Set B
+------------------------------------------------------------------------------------------------------------------
+Problem1: (p → ¬ r) ↔ (¬q ⊕ ¬p)
+-----------------------------
+(p → ¬ r) ↔ (¬q ⊕ ¬p)
+≡ a ↔ b
+≡ c
+
+p	q	r  ¬p  ¬q   ¬r  a   b   c
+0	0	0	1	1	1	1	0	0
+0	0	1	1	1	0	1	0	0
+0	1	0	1	0	1	1	1	1
+0	1	1	1	0	0	1	1	1
+1	0	0	0	1	1	1	1	1
+1	0	1	0	1	0	0	1	0
+1	1	0	0	0	1	1	0	0
+1	1	1	0	0	0	0	0	1
+
+Problem2(a):
+-----------------------------
+Only the multiplication of two odd numbers can yield an odd number.
+As, both x and y belongs to Z, when x and y is an even number, e.g, 2
+the propositional function will become false.
+
+As both the quantifiers are universal it takes one false case for the propositional function
+to be false.
+Hence, the answer is false
+
+Problem2(b):
+-----------------------------
+Only the multiplication of two odd numbers can yield an odd number.
+As, both x and y belongs to odd numbers, the propositional function will be always true.
+
+Hence, the answer is true.
