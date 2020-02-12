@@ -1,0 +1,267 @@
+Problem Set 2 Solution: codes by Mahfizur
+-------------------------------------------------------------------------------------------------------
+problem1
+------------
+#include <stdio.h>
+
+int main()
+{
+    int i, n;
+    printf("Print odd numbers till: ");
+    scanf("%d", &n);
+    printf("All odd numbers from 1 to %d are: \n", n);
+
+    for(i=1; i<=n; i++)
+    {
+
+        if(i%2!=0) //checking odd
+        {
+            printf("%d\n", i);
+        }
+    }
+    return 0;
+}
+
+problem2
+------------
+#include <stdio.h>
+
+int main()
+{
+    int i, n;
+    printf("Print first odd numbers till: ");
+    scanf("%d", &n);
+    printf(" %d odd positive integers are: \n", n);
+
+    for(i=1; i<=2*n; i++)
+    {
+        if(i%2!=0) //checking odd
+        {
+            printf("%d\n", i);
+        }
+    }
+
+    return 0;
+}
+
+problem3
+------------
+#include <stdio.h>
+
+int main()
+{
+    int i, n,a,b;
+    printf("enter two numbers: ");
+    scanf("%d", &a);
+    scanf("%d", &b);
+
+    printf("multiples  are: \n");
+
+    for(i=a; i<=b; i++) //a,b are ranges
+    {
+        if(i%3==0) //checking whether it is multiple of 3 or not
+        {
+            printf("%d\n", i);
+        }
+    }
+
+    return 0;
+}
+problem4
+------------
+#include <stdio.h>
+
+int main()
+{
+
+    int x,n,i=0,r=1;
+    printf("enter two numbers base and power: ");
+    scanf("%d",&x); //base
+    scanf("%d",&n); //power
+    for(i=1; i<=n; i++)
+    {
+        r=r*x;
+    }
+    printf("\n ans is %d",r);
+
+
+
+    return 0;
+}
+problem5
+------------
+#include <stdio.h>
+
+int main()
+{
+    int n,r=0,t=1,i;
+    printf("enter the input: ");
+    scanf("%d", &n);
+
+    for(i=1; i<=n; i++)
+    {
+        t=(i*n);
+        r=r+(t*t*t); //calculate the cube value for each digit
+    }
+    printf("%d", r);
+
+    return 0;
+}
+
+problem6
+------------
+#include <stdio.h>
+
+
+int main()
+{
+    int n,r=0,t=1,i;
+    printf("enter the input: ");
+    scanf("%d", &n);
+
+    for(i=1; i<=n; i++)
+    {
+        if(i==n)
+            r=r+(i*i);
+        else
+        {
+            r=r+(i*(i+1));
+        }
+    }
+    printf("%d", r);
+
+    return 0;
+}
+
+problem7
+------------
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int n,r=0,t=1,i;
+    printf("enter the input: ");
+    scanf("%d", &n);
+
+    for(i=1; i<=n; i++)
+    {
+        t=pow(n,i);  //calculating power of the recent value
+        r=r+(i*t);  //multiplying with the power
+    }
+    printf("%d", r);
+
+    return 0;
+}
+
+problem8
+------------
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int n,r=0,t=1,i;
+    printf("enter the input: ");
+    scanf("%d", &n);
+
+    for(i=1; i<=n; i++)
+    {
+        r=r+(i*(i+1)*(i+2));  //iterate as 1.2.3 then 2.3.4 and so on.
+    }
+    printf("ans %d", r);
+
+    return 0;
+}
+
+problem9
+------------
+problem10
+------------
+#include <stdio.h>
+#include <math.h>
+
+int main()
+{
+    int n,i=0,c=0;
+    printf("enter the input to count the odd divisor: ");
+    scanf("%d",&n);
+    for(i=3; i<=n; i++)
+    {
+        if(n%i==0 && i%2==1) //checking odd divisor or not
+            c++;
+    }
+    printf("%d", c);
+
+    return 0;
+}
+
+problem11
+------------
+#include <stdio.h>
+#include <math.h>
+
+
+int main()
+{
+    int n,r=1,t=1,i=0;
+    printf("enter the number: ");
+    scanf("%d",&n);
+    while(r!=0)
+    {
+        r=n%10;       //separating digit by their remainder
+        if(r!=0)
+            printf("%d ",r);
+        n=n/10;
+    }
+
+
+
+
+    return 0;
+}
+
+
+problem12
+------------
+#include <stdio.h>
+#include <math.h>
+
+
+int main()
+{
+    int n,r,rev=0;
+    printf("enter the number to reverse: ");
+    scanf("%d",&n);
+    while(n != 0)
+    {
+        r = n%10;
+        rev = rev*10 + r;
+        n /= 10;
+    }
+
+
+    printf("reverse number is: ");
+    printf("%d", rev);
+
+    return 0;
+}
+problem13
+------------
+#include <stdio.h>
+int main() {
+    int num, a, rem, result = 0;
+    printf("Enter a three-digit integer: ");
+    scanf("%d", &num);
+    a = num;
+    while (a != 0) {   //until the digit ends
+        rem = a% 10;      //rem store the reminder
+        result += rem * rem * rem;  
+        a /= 10;
+    }
+    if (result == num)
+        printf("%d is an Armstrong number.", num);
+    else
+        printf("%d is not an Armstrong number.", num);
+    return 0;
+}
