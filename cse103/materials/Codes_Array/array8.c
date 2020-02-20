@@ -10,7 +10,7 @@ int main() {
     for ( i = 0; i < N; i++) {
         scanf("%d", &a[i]);
     }
-    max = max2 = a[0];
+    max = max2 = -9999999;
     for ( i = 0; i < N; i++)
     {
         if (a[i] > max)
@@ -18,7 +18,7 @@ int main() {
             max2 = max;
             max = a[i];
         }
-        else if (a[i] > max2)
+        else if (a[i] > max2 && a[i] != max)
         {
             max2 = a[i];
         }
