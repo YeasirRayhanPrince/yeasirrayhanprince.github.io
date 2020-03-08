@@ -1,0 +1,43 @@
+1.	At the start of the semester you all have been assigned a student number, e.g. 2018-1-60-99. If you take a close look at your student id: the first 4 digits represent the year you got admitted into the university, the 5th digit represents the semester(1 means spring, 2 means summer and 3 means fall), the next two digits represent the departmental code(60 is the departmental code of CSE) and last three digits represent the individual id (99) assigned to you.
+You will be given an array of size 10 which will contain a student ID. Your task is to write a code to check the validity if a student can take CSE103 course or not. (Mark - 5)
+The requirements for taking CSE 103 course:
+a.	He must have been admitted in year 2017, 2018 or 2019 
+b.	He must be admitted in spring, summer of fall semester
+c.	He must be a student of CSE department
+
+Hints: You might have to use flag for solving this problem
+NB: Avoid writing code for taking input of the array as it does not hold any mark.
+
+Examples
+Input: Output
+2 0 1 8 2 6 0 1 1 3	: Valid			
+2 0 1 3 2 6 0 1 1 3 : Not valid
+2 0 1 8 5 6 0 1 1 3	: Not valid
+2 0 1 8 2 7 0 1 1 3 : Not valid
+
+Solution:
+int flag = 1;
+if(a[0] != 2) flag =0;
+if(a[1] != 0) flag =0;
+if(a[2] != 1) flag =0;
+if(a[3] != 7 || a[3] != 8 || a[3] != 9) flag =0;
+if(a[4] != 1 || a[4] != 2 || a[4] != 3) flag =0;
+if(a[5] != 6) flag =0;
+if(a[6] != 0) flag =0;
+if(flag == 0) printf("Not valid");
+if(flag == 1) printf("valid");
+return 0;
+
+2.	Suppose, a is an array of size n. The following code-snippet performs some manipulations on  the input array a and transforms it. (Mark 2)
+        for(i = 0; i <  n/2; i++){
+            if(i*2 < n){
+                a[i*2] = a[i] * 2;
+            }
+        }
+Your task is to write the output(transformed) array for the following input array
+		1	2	3	4	5	6
+
+Solution:
+2 2 4 4 8 6
+ 
+					
