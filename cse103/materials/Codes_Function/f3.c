@@ -1,7 +1,7 @@
 #include<stdio.h>
 
-//double average(int, int);
-double average(int a, int b);// function prototype define
+double average(int, int);
+//double average(int a, int b);// function prototype define
 
 int main() {
     int x, y;
@@ -17,3 +17,10 @@ double average(int a, int b) {
     double avg = (double)(a + b) / 2;
     return avg;
 }
+
+
+
+
+
+
+

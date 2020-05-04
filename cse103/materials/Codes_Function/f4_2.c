@@ -15,7 +15,7 @@ int main() {
     c = 30;
     printf("%d %d %d\n", a, b, c);
     if(1){
-        a = 40;
+        int a = 40;
         printf("%d\n", a);
     }
     printf("%d %d %d\n", a, b, c);

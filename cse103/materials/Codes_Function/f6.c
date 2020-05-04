@@ -12,10 +12,7 @@ int mult(int a, int b) {
 }
 
 float div(int a, int b) {
-
-
-    if ( b == 0 )return 0;
-    else return a / (float)b;
+    return a / (float)b;
 }
 
 int main() {
@@ -36,7 +33,8 @@ int main() {
         z = mult(x, y);
     }
     else  if ( c == '/') {
-        z = div(x, y);
+        if ( y == 0 ) printf("Math error");
+        else z = div(x, y);
     }
     else {
         printf("Invalid Option\n");
