@@ -10,8 +10,8 @@ int main(){
     char s1[ ] = { 'h', 'e', 'l', 'l', 'o', '\0' };
     char s2[ ] = "hello"; // Array of size six
     char s3[ 20 ] = "hello"; // Fifteen null bytes
-    char s4[ 5 ] = "hello"; // Five chars, sacrifices the null byte
-    char s5[ 3 ] = "hello"; // Illegal
+    //char s4[ 5 ] = "hello"; // Five chars, sacrifices the null byte
+    //char s5[ 3 ] = "hello"; // Illegal
 
 
     // Writing Strings Using printf and puts
@@ -26,7 +26,7 @@ int main(){
     scanf("%s", s5);
     printf("%s", s5);
     //char s6[80];
-    //gets(s6);
+    gets(s6);
     printf("%s", s6);
 
     return 0;
