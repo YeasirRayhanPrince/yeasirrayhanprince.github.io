@@ -89,13 +89,13 @@ table.paddedtable td { padding: 2px 10px 2px 10px; }
 .announcement {
   background-color: aliceblue;
   border-color: #bce8f1;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   width: 100%
 }
 
 .announcement-body{
   margin-left: 25px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .newsfeedHeader {
