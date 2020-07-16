@@ -5,7 +5,7 @@ int main()
     scanf("%d", &a);
     printf("Enter b: ");
     scanf("%d", &b);
-    if ( a > b ){
+    if(a > b){
         printf("a is greater\n");
     }
     return 0;

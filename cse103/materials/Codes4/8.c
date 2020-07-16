@@ -3,7 +3,7 @@
    Input 3: 0 (Any problem with the Output? How can you solve it?)
    Input 4: 101 (Any problem with the Output? How can you solve it?)
 */
-
+#include <stdio.h>
 int main(){
     int mark;
     scanf("%d",&mark);
