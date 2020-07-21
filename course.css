@@ -56,13 +56,16 @@ TD { vertical-align: top; }
 
 TD.sidebar { 
 	background: black; /*rgb(28, 38, 54);/*#e8e6d8; */
-	width: 180px; 
+	width: 155px; 
 }  
 TD.menu{
 	padding-left: 20px;
 	padding-top: 6px;
 }
-
+TD.menu_top{
+	padding-left: 20px;
+	padding-top: 40px;
+}
 
 TD.main { 
 	background-repeat: repeat; 
