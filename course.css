@@ -55,7 +55,7 @@ TD { vertical-align: top; }
 /*sidebar, left */
 
 TD.sidebar { 
-	background: rgb(28, 38, 54);/*#e8e6d8; */
+	background: black; /*rgb(28, 38, 54);/*#e8e6d8; */
 	width: 180px; 
 }  
 TD.menu{
