@@ -1,0 +1,100 @@
+2.
+a.	
+error: variable 'a' is undeclared
+#include <stdio.h>
+int main(){
+	int a = 20;
+	printf("%d", a);
+}
+
+b.	
+error: redefinition of 'a' at line 5
+#include <stdio.h>
+int main(){
+	int a = 20;
+	printf("%d", a);
+	a = 40;
+	printf("%d", a);
+}
+
+c.	
+error: invalid identfier at line 3
+#include <stdio.h>
+int main(){
+	int a1;
+	printf("%d", a1);
+}
+
+d.	
+error: a semicolon before }
+#include <stdio.h>
+int main(){
+	int a = 20;
+	printf("%d", a);
+}
+
+e.	
+error: & before a at line 4
+#include <stdio.h>
+int main(){
+	int a = 20;
+	scanf("%d", &a);
+}
+
+f.	
+error: space after %d and no & before a at line 4
+#include <stdio.h>
+int main(){
+    int a = 20;
+    scanf("%d", &a);
+}
+
+g.	
+error: & before a at line 4
+#include <stdio.h>
+int main(){
+	int a = 20;
+	scanf("%d", &a);
+}
+
+h.	
+error: should be is equal "==" operator at line4
+#include <stdio.h>
+int main(){
+    int a = 20;
+    if(a == 20){
+        printf("a is less than 20\n");
+    }
+}
+
+i.	
+error: should be a } to close the else statement
+#include <stdio.h>
+int main(){
+    int a = 10;
+    if(a>0){
+        printf("a is positive\n");
+    }
+    else{
+    printf("a is negative\n");
+	}
+}
+
+3.
+#include <stdio.h>
+#include <math.h>
+int main(){
+    float a, b,c, d, e, f;
+    scanf("%f %f %f %f %f %f", &a, &b, &c, &d, &e, &f);
+    float side1 = pow(a-c, 2) + pow(b-d, 2);
+    float side2 = pow(c-e, 2) + pow(d-f, 2);
+    float side3 = pow(e-a, 2) + pow(f-b, 2);
+    if(side1+side2==side3 || side2+side3 == side1 || side3+side1==side2)
+    {
+        printf("Right Triangle");
+    }
+    else
+    {
+        printf("Not Right Triangle");
+    }
+}
