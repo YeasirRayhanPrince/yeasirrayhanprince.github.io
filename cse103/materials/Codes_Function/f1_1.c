@@ -11,7 +11,9 @@ int main() {
     double z;
     printf("Enter two numbers: ");
     scanf("%d%d", &x, &y);
+
     z = average(x, y); // call a function
     printf("Average: %.2f\n", z);
+
     return 0;
 }

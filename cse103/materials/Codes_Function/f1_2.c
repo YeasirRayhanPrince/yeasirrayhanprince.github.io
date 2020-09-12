@@ -21,7 +21,9 @@ int main() {
     for(i = 0; i < N; i++){
         scanf("%d", &x[i]);
     }
+
     z = average(x, N);
     printf("Average: %.2f\n", z);
+
     return 0;
 }
