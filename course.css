@@ -145,7 +145,11 @@ table.paddedtable td { padding: 2px 10px 2px 10px; }
   color: #3b5998;
   font-weight: bold;
 }
-
+.td-num{
+	border: 1px solid black;
+	text-align: center;
+	
+}
 .td-gen{
 	border: 1px solid black;
 	padding-left: 10px;
