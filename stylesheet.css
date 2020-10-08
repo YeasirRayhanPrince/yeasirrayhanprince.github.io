@@ -129,3 +129,15 @@ name {
 span.highlight {
   background-color: #ffffd0;
 }
+
+.td-gen{
+	border: 1px solid black;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+}
+.td-num{
+	border: 1px solid black;
+	text-align: center;
+	
+}
