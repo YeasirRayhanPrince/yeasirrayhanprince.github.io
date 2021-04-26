@@ -156,9 +156,9 @@
 				<li>
 				Consider the following priority levels for multi-level feedback queue scheduler :
 				<ul>
-					<li>priority 2 (lowest), which runs threads with a 0.1 timeslice </li>
+					<li>priority 2 (lowest), which runs threads with a 1 timeslice </li>
 					<li>priority 1, which runs threads with a 0.2 timeslice; and </li>
-					<li>priority 0 (highest), which runs threads with a 1 timeslice</li>
+					<li>priority 0 (highest), which runs threads with a 0.1 timeslice</li>
 				</ul>
 				When a thread uses its entire timeslice and remains runnable, it is moved to a lower priority level (if
 				possible). When a thread does not use entire timeslice (and was not preempted), it is moved to a
@@ -206,16 +206,7 @@
 					<td class="td-gen">  </td>
 					<td class="td-gen">  </td>
 				</tr>
-				<tr>
-					<td class="td-num"> 1 </td>
-					<td class="td-gen">  </td>
-					<td class="td-gen">  </td>
-					<td class="td-gen">  </td>
-					<td class="td-gen">  </td>
-					<td class="td-gen">  </td>
-					<td class="td-gen">  </td>
-					<td class="td-gen">  </td>
-				</tr>
+				
 				<tr>
 					<td class="td-num"> 2 </td>
 					<td class="td-gen">  </td>
@@ -356,6 +347,17 @@
 					<td class="td-gen">  </td>
 					<td class="td-gen">  </td>
 				</tr>
+				<tr>
+					<td class="td-num"> 16 </td>
+					<td class="td-gen">  </td>
+					<td class="td-gen">  </td>
+					<td class="td-gen">  </td>
+					<td class="td-gen">  </td>
+					<td class="td-gen">  </td>
+					<td class="td-gen">  </td>
+					<td class="td-gen">  </td>
+				</tr>
+				
 				<tr>
 					<td class="td-num"> Avg Wait Time </td>
 					<td class="td-gen">  </td>
