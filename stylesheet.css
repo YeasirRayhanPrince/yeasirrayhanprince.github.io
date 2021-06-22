@@ -81,7 +81,7 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px
+  font-size: 14px;
 }
 
 strong {
@@ -101,8 +101,13 @@ papertitle {
 }
 
 name {
-  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-family: Verdana, Helvetica, sans-serif;
   font-size: 32px;
+  padding-bottom: 100px;
+}
+name-secondary {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 18px;
 }
 
 .one {
@@ -140,4 +145,7 @@ span.highlight {
 	border: 1px solid black;
 	text-align: center;
 	
+}
+week{
+    font-weight: bold;
 }
