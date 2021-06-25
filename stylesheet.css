@@ -84,6 +84,11 @@ a {
   font-size: 14px;
 }
 
+td {
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
@@ -105,6 +110,7 @@ name {
   font-size: 32px;
   padding-bottom: 100px;
 }
+
 name-secondary {
   font-family: Verdana, Helvetica, sans-serif;
   font-size: 18px;
@@ -138,8 +144,10 @@ span.highlight {
 .td-gen{
 	border: 1px solid black;
 	padding-left: 10px;
+	padding-up: 10px;
 	padding-right: 10px;
-	
+	padding-down: 10px;
+
 }
 .td-num{
 	border: 1px solid black;
@@ -148,4 +156,41 @@ span.highlight {
 }
 week{
     font-weight: bold;
+}
+
+.label {
+	display: inline;
+    padding: .2em .6em .3em;
+    font-size: 75%;
+    font-weight: bold;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25em;
+}
+
+.text-base {
+    font-size: 14px !important;
+}
+
+.label-lecture {
+    background-color: #839192  ;
+}
+
+.label-pps {
+    background-color: SteelBlue;
+}
+
+.label-lab {
+    background-color: #EB984E;
+}
+
+.label-due {
+    background-color: #CD6155;
+}
+
+.label-guest {
+    background-color: #807e9b;
 }
