@@ -141,18 +141,24 @@ span.highlight {
   background-color: #ffffd0;
 }
 
-.td-gen{
-	border: 1px solid black;
+.th{
+    border-bottom: 1px solid grey;
 	padding-left: 10px;
 	padding-up: 10px;
 	padding-right: 10px;
 	padding-down: 10px;
-
+	text-align: left;
+}
+.td-gen{
+	border-bottom: 1px solid grey;
+	padding-left: 10px;
+	padding-up: 10px;
+	padding-right: 10px;
+	padding-down: 10px;
 }
 .td-num{
-	border: 1px solid black;
-	text-align: center;
-	
+	border: 0px solid black;
+	text-align: left;
 }
 week{
     font-weight: bold;
