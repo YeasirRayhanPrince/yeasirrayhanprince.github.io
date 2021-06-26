@@ -197,6 +197,7 @@ week{
     background-color: #CD6155;
 }
 
-.label-guest {
+.label-cmd {
     background-color: #807e9b;
+    padding-bottom: -10px;
 }
