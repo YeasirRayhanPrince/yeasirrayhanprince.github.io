@@ -116,6 +116,12 @@ name-secondary {
   font-size: 18px;
 }
 
+due {
+  font-family: Verdana, Helvetica, sans-serif;
+  font-size: 18px;
+  color: red;
+}
+
 .one {
   width: 160px;
   height: 160px;
@@ -200,4 +206,8 @@ week{
 .label-cmd {
     background-color: #807e9b;
     padding-bottom: -10px;
+}
+
+.label-function {
+    background-color: rgb(115, 147, 179);
 }
