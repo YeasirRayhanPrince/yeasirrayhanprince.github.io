@@ -21,9 +21,13 @@ int insert_item(int item) //insert at the beginning
     //step-1: create a new node
 	struct node* new_node ; //stores the address of the new node
 	new_node = (struct node*) malloc (sizeof(struct node)) ;
-	new_node->item = item ;
+	new_node->item = item;
+	new_node->next = 0;
+
+    //step-2: update the pointers of the new node
 	new_node->next = list ; //point to previous first node
-	//step-2:set list to point to newnode as this is now the first node
+
+	//step-3: update the head of the linked list
 	list = new_node ;
 	return SUCCESS_VALUE ;
 }
