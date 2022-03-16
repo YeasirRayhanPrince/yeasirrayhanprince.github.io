@@ -54,7 +54,7 @@ Parameters:
 - $\Phi_{a, b, l}: \R \to [1, l]$
 - Quantization Level: $l$
 
-![equation](https://latex.codecogs.com/svg.image?QRMBR_P(C)&space;=&space;(\phi_{P.xl,&space;P.xh,&space;l}(C.xl),&space;&space;\phi_{P.yl,&space;P.yh,&space;l}(C.yl),\Phi_{P.xl,&space;P.xh,&space;l}(C.xh),&space;&space;&space;\Phi_{P.xl,&space;P.xh,&space;l}(C.yh)))
+![equation](https://latex.codecogs.com/svg.image?\inline&space;\large&space;QRMBR_P(C)&space;=&space;(\phi_{P.xl,&space;P.xh,&space;l}(C.xl),&space;&space;\phi_{P.yl,&space;P.yh,&space;l}(C.yl),\Phi_{P.xl,&space;P.xh,&space;l}(C.xh),&space;&space;&space;\Phi_{P.xl,&space;P.xh,&space;l}(C.yh)))
 
 $$
 QRMBR_P(C) = (\phi_{P.xl, P.xh, l}(C.xl),  
