@@ -1,0 +1,9 @@
+1. Translation-Triggered Prefetching: http://www.cs.yale.edu/homes/abhishek/abhishek-asplos17.pdf
+It has a nice description about how the TLB hits / misses work.
+
+2. Whether prefetching causes DTLB misses?
+- In processors based on Nehalem, Westmere, Sandy Bridge, and newer microar-
+chitectures, Intel Core 2 processors, and Intel Atom processors, PREFETCH causing a DTLB miss can
+be fetched across a page boundary. [Section 9.3.3] (Intel S/W optimization Manual-Jan 2023)
+
+
