@@ -64,7 +64,7 @@
 }
 
 a {
-  color: #1772d0;
+  color: #800000; 
   text-decoration: none;
 }
 
@@ -81,7 +81,7 @@ tr,
 p,
 a {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 td {
@@ -91,7 +91,7 @@ td {
 
 strong {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 heading {
@@ -101,7 +101,7 @@ heading {
 
 papertitle {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 700
 }
 
